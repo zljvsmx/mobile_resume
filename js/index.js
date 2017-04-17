@@ -1,4 +1,31 @@
 $(function(){
+	//音频播放处理
+	
+	(function musicplay(){
+		var musicMenu=$("#musicMenu");
+		var musicAudio=$("#musicAudio");
+		musicMenu[0].addEventListener('click',function(){
+			if(musicAudio[0].paused){
+				musicAudio[0].play();
+				musicMenu.addClass("move");
+				return;
+			}else{
+				musicAudio[0].pause();
+				musicAudio.attr("class","music");
+			}
+		},false)
+		function controlMusic(){
+			musicAudio[0].play();
+			musicAudio[0].addEventListener('canplay',function(){
+				musicMenu.css("display","block");
+				musicMenu.addClass("move");
+			},false)
+		}
+		window.setTimeout(controlMusic,1000);
+	})();
+	
+//	$("audio").audioPlayer();
+	
 	//REM
 	(function(){
 		var scale=$("body").width()/750;
@@ -15,20 +42,48 @@ $(function(){
 	var mySwiperB = new Swiper ('.swiper-container-b', {
 	    direction: 'vertical',
 	    loop: true,
+	    //当切换结束时给当前页面添加ID，通过回调函数判断是否执行动画
+	    onSlideChangeEnd:function(swiper){
+	    		var slideArry=swiper.slides;//获取当前所有活动页面个数，包括一头一尾复制的两个页面
+	    		var curIn=swiper.activeIndex;//当前页面的索引值
+	    		var total=slideArry.length;
+	    		var targetId="page";
+	    		switch(curIn){
+	    			case 0:
+	    				targetId+=total-2;
+	    				break;
+	    			case (total-1):
+	    				targetId+=1;
+	    				break;
+	    			default:
+	    				targetId+=curIn;
+	    		}
+	    		//给当前页面加ID，同时删除其余页面的ID
+	    		for(var i=0;i<total;i++){
+	    			if(curIn===i){
+	    				slideArry[i].id=targetId;
+	    			}else{
+	    				slideArry[i].id=null;
+	    			}
+	    		}
+	    		//第三页判断是否是第三页，然后决定是否执行canvas动画
+			$(".swiper-container-b .swiper-wrapper div").each(function(){
+				if($("#page3").length>0){
+					setTimeout(canvas_Wedge,1200)
+				}
+			})
+	    		
+	    }
 	    
-	  })
+	})
 	var mySwiperS=new Swiper('.swiper-container-s',{
 		direction: 'horizontal',
 		autoplay:5000,
 		loop: true,
 	})
 	
-	//第三页判断是否是第三页，然后决定是否执行canvas动画
-	$(".swiper-container-b .swiper-wrapper div").each(function(){
-		if($(".page3").length>0){
-			setTimeout(canvas_Wedge,1200)
-		}
-	})
+	
+	
 	
 	//KONVA动画特效
 	function canvas_Wedge(){

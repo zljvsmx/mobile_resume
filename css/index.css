@@ -55,6 +55,7 @@ html{
 
 /*PAGE1*/
 .page1 .person{
+	opacity: 0;
 	top: 0.5rem;
 	left: 3.335rem;
 	margin-left: -0.5rem;
@@ -62,27 +63,42 @@ html{
 	height: 4.35rem;
 	z-index: 1;
 	transform-origin: center bottom; 
+
+}
+#page1 .person{
 	animation: person 1s linear 0s 1 both;
+	
 }
 .page1 .board{
+	opacity: 0;
 	z-index: 1;
 	width: 4.9rem;
 	height: 1.03rem;
 	left: 50%;
 	margin-left: -2.45rem;
 	top: 6.1rem;
+
+}
+#page1 .board{
 	animation: board 0.5s linear 1s 1 both;
+	
 }
 .page1 .resume{
+	opacity: 0;
 	width: 1.98rem;
 	height: 0.56rem;
 	left: 50%;
 	margin-left: -0.99rem;
 	top: 8.1rem;
 	transform: scale(1.5);
+
+}
+#page1 .resume{
 	animation: resume 0.5s linear 1.4s 1 both;
+	
 }
 .page1 .name{
+	opacity: 0;
 	width: 100%;
 	font-size: 0.5rem;
 	position: absolute;
@@ -90,26 +106,38 @@ html{
 	left: 50%;
 	top: 9rem;
 	margin-left: -28%;
-	animation: name 1s linear 1.6s 1 both;
-}
 
+}
+#page1 .name{
+	animation: name 1s linear 1.6s 1 both;
+	
+}
 .page1 .bullon{
+	opacity: 0;
 	width: 0.46rem;
 	height: 0.67rem;
 	bottom: 2rem;
 	left: 50%;
 	margin-left: -0.23rem;
+
+}
+#page1 .bullon{
 	animation: bullon 2s linear 2.5s 1 both;
+	
 }
 .page1 .realize{
+	opacity: 0;
 	width: 2.57rem;
 	height: 0.47rem;
 	left: 50%;
     margin-left: -1.25rem;
-    bottom: 2.5rem;
-    animation: realize 3s linear 4.1s 1 both;
-}
+    bottom: 1rem;
 
+}
+#page1 .realize{
+    animation: realize 3s linear 4.1s 1 both;
+	
+}
 
 /*PAGE2*/
 .page2 .page2-box{
@@ -118,6 +146,7 @@ html{
 	font-size: 0.05rem;
 }
 .page2 .page2-board{
+	opacity: 0;
 	width: 7rem;
 	height: 11.17rem;
 	left: 0;
@@ -125,7 +154,11 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+
+}
+#page2 .page2-board{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page2 .title{
 	width: 4.96rem;
@@ -133,7 +166,11 @@ html{
 	top: 0.1rem;
 	left: 50%;
 	margin-left:-2.48rem;
+	opacity: 0;
+}
+#page2 .title{
 	animation: title 0.5s ease-out 0.6s 1 both;
+	
 }
 .page2 .line{
 	width: 0.03rem;
@@ -143,14 +180,22 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	opacity: 0;
+}
+#page2 .line{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page2 .page2-person{
 	width: 1.33rem;
 	height: auto;
 	right: 0.8rem;
     top: 1.2rem;
+	opacity: 0;
+}
+#page2 .page2-person{
     animation: page2-person 0.5s ease-out 1s 1 both;
+	
 }
 .page2 .school{
 	width: 3.22rem;
@@ -159,7 +204,11 @@ html{
 	top: 1.5rem;
     left: 0.6rem;
     transform-origin: right top; 
+	opacity: 0;
+}
+#page2 .school{
     animation: school 0.5s ease-out 1.5s 1 both;
+	
 }
 .page2 .school img{
 	top: 0;
@@ -167,10 +216,14 @@ html{
 .page2 .bank{
 	width: 3.22rem;
 	padding-top: 0.3rem;
-	top: 3.8rem;
+	top: 3.4rem;
     left: 49%;
     transform-origin: left top;
+	opacity: 0;
+}
+#page2 .bank{
     animation: bank 0.5s ease-out 2s 1 both;
+	
 }
 .page2 .bank img{
 	top: 0;
@@ -180,8 +233,11 @@ html{
 	width: 3.22rem;
 	padding-top: 0.3rem;
 	left: 0.6rem;
-	top: 5.7rem;
+	top: 5.1rem;
     transform-origin: right top; 
+	opacity: 0;
+}
+#page2 .zuoke{
     animation: school 0.5s ease-out 2.5s 1 both;
 	
 }
@@ -191,11 +247,14 @@ html{
 .page2 .linjia{
 	width: 3.22rem;
 	padding-top: 0.3rem;
-	top: 7.4rem;
+	top: 6.7rem;
     left: 49%;
     transform-origin: left top;
+	opacity: 0;
+}
+#page2 .linjia{
     animation: bank 0.5s ease-out 3s 1 both;
-    
+	
 }
 .page2 .linjia img{
 	top: 0;
@@ -205,8 +264,11 @@ html{
 	width: 3.22rem;
 	padding-top: 0.3rem;
 	left: 0.6rem;
-	top: 9.7rem;
+	top: 8.7rem;
     transform-origin: right top; 
+	opacity: 0;
+}
+#page2 .learn{
     animation: school 0.5s ease-out 3.5s 1 both;
 	
 }
@@ -229,7 +291,11 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	opacity: 0;
+}
+#page3 .page3-board{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page3 .test{
 	z-index: 2;
@@ -238,7 +304,11 @@ html{
 	top: 0.1rem;
 	left: 50%;
 	margin-left:-2.48rem;
+	opacity: 0;
+}
+#page3 .test{
 	animation: title 0.5s ease-out 0.6s 1 both;
+	
 }
 .page3 .canvas_parent{
 	position: absolute;
@@ -246,10 +316,10 @@ html{
 	width: 7rem;
 	height: 10rem;
 	left: 0;
-	top: 1.3rem;
+	top: 0.7rem;
 	right: 0;
 	margin: auto;
-	/*border: 1px solid black;*/
+	transform: scale(0.9);
 }
 .page3 .canvas_parent div{
 	position: absolute;
@@ -259,35 +329,30 @@ html{
 	height: 25%;
 	top: 0;
 	left: 0;
-	/*background-color: lightblue;*/
 }
 .page3 .canvas_parent #canvasCSS3{
 	width: 50%;
 	height: 25%;
 	top: 0;
 	right: 0;
-	/*background-color: lightcoral;*/
 }
 .page3 .canvas_parent #canvasJS{
 	width: 50%;
 	height: 25%;
 	top: 25%;
 	left: 0;
-	/*background-color: lightgray;*/
 }
 .page3 .canvas_parent #canvasJQ{
 	width: 50%;
 	height: 25%;
 	top: 25%;
 	right: 0;
-	/*background-color: lawngreen;*/
 }
 .page3 .canvas_parent #canvasKONVA{
 	width: 100%;
 	height: 25%;
 	top: 50%;
 	left: 0;
-	/*background-color: #c31865;*/
 }
 .page3 .canvas_parent #else{
 	border-radius: 0.5rem;
@@ -299,23 +364,27 @@ html{
 	background-color: #42b7f0;
 	text-align: center;
 	color: #FFFFFF;
+	opacity: 0;
+}
+#page3 .canvas_parent #else{
 	animation: else 1.5s linear 1.6s 1 both;
+	
 }
 .page3 .img_HTML{
 	width: 2.22rem;
-	height: 1.27rem;
-	transform: scale(0.3);
-	top: 1.95rem;
+    height: 1.27rem;
+    transform: scale(0.3);
+    top: 1.6rem;
     left: 0.9rem;
-	z-index: 3;
+    z-index: 3;
 }
 .page3 .img_CSS{
 	width: 2.22rem;
 	height: 1.27rem;
 	transform: scale(0.3);
 	z-index: 3;
-	top: 1.95rem;
-	right: 0.9rem;
+	top: 1.6rem;
+    right: 1.2rem;
 }
 .page3 .img_JS{
 	width: 2.22rem;
@@ -323,27 +392,31 @@ html{
 	transform: scale(0.3);
 	z-index: 3;
 	left: 0.9rem;
-	top: 4.45rem;
+    top: 3.85rem;
 }
 .page3 .img_JQ{
 	width: 2.22rem;
 	height: 1.27rem;
 	transform: scale(0.3);
 	z-index: 3;
-	right: 0.9rem;
-	top: 4.45rem;
+	right: 1.2rem;
+    top: 3.85rem;
 }
 .page3 .img_KON{
 	width: 2.22rem;
 	height: 1.27rem;
 	transform: scale(0.3);
 	z-index: 3;
-	top: 6.95rem;
-    left: 2.65rem;
+	top: 6.1rem;
+    left: 2.35rem;
 }
 .page3 .img_tag{
+	opacity: 0;
+}
+#page3 .img_tag{
 	animation: imgTag 0.5s linear 1.2s 1 both;
 }
+
 
 
 /*PAGE4*/
@@ -356,7 +429,11 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	opacity: 0;
+}
+#page4 .page4_board{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page4 .page4_project{
 	z-index: 2;
@@ -366,7 +443,11 @@ html{
 	left: 50%;
 	margin-left:-2.48rem;
 	transform-origin: center top;
+	opacity: 0;
+}
+#page4 .page4_project{
 	animation: project 0.5s linear 0.6s 1 both; 
+	
 }
 .page4 .page4_person{
 	width: 1.33rem;
@@ -375,7 +456,11 @@ html{
 	bottom: 0;
     left: 0;
     opacity: 0;
+
+}
+#page4 .page4_person{
     animation: leftBottomPerson 2s linear 2s infinite alternate;
+	
 }
 .page4 .mall_title{
 	z-index: 3;
@@ -384,7 +469,11 @@ html{
     top: 1.5rem;
     left: -0.3rem;
     transform: scale(0.7);
+	opacity: 0;
+}
+#page4 .mall_title{
     animation: mallTitle 1s linear 1s 1 both;
+	
 }
 .page4 .mall{
 	z-index:3;
@@ -393,7 +482,11 @@ html{
 	transform: scale(1);
 	top: 2.5rem;
     left: 0.8rem;
+	opacity: 0;
+}
+#page4 .mall{
     animation: mall 1s linear 1.2s 1 both;
+	
 }
 .page4 .mall_detail{
 	width: 3rem;
@@ -402,7 +495,11 @@ html{
 	transform: scale(1);
     top: 2.5rem;
     right: 0.5rem;
+	opacity: 0;
+}
+#page4 .mall_detail{
     animation: mallDetail 1s linear 1.2s 1 both;
+	
 }
 
 
@@ -416,7 +513,11 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	opacity: 0;
+}
+#page5 .page5_board{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page5 .page5_project{
 	z-index: 2;
@@ -426,7 +527,11 @@ html{
 	left: 50%;
 	margin-left:-2.48rem;
 	transform-origin: center top;
+	opacity: 0;
+}
+#page5 .page5_project{
 	animation: project 0.5s linear 0.6s 1 both; 
+	
 }
 .page5 .page5_person{
 	width: 1.33rem;
@@ -435,7 +540,11 @@ html{
 	bottom: 0;
     left: 0;
     opacity: 0;
+
+}
+#page5 .page5_person{
     animation: leftBottomPerson 2s linear 2s infinite alternate;
+	
 }
 .page5 .shopcart{
 	width: 7rem;
@@ -456,18 +565,26 @@ html{
 	left: 50%;
 	margin-left: -3.95rem;
 	top: 1.4rem;
+	opacity: 0;
+}
+#page5 .shopcart_title{
 	animation: mallTitle 1s linear 1s 1 both;
-
+	
 }
 .page5 .cart2{
-	animation: cart2 6s linear 1.6s infinite both;
+
 	border: 0.01rem solid black;
+	
+}
+#page5 .cart2{
+	animation: cart2 6s linear 1.6s infinite both;
 	
 }
 .page5 .cart1{
-	animation: cart1 6s linear 1.6s infinite both;
 	border: 0.01rem solid black;
-	
+}
+#page5 .cart1{
+	animation: cart1 6s linear 1.6s infinite both;
 }
 .page5 .shopcart_detail{
 	width: 4.54rem;
@@ -479,7 +596,11 @@ html{
 	right: 0;
 	top: 6rem;
 	margin: auto;
+	opacity: 0;
+}
+#page5 .shopcart_detail{
 	animation: shopcart_detail 2.5s linear 2s 1 both;
+	
 }
 
 
@@ -493,7 +614,11 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	opacity: 0;
+}
+#page6 .page6_board{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page6 .page6_project{
 	z-index: 2;
@@ -503,7 +628,11 @@ html{
 	left: 50%;
 	margin-left:-2.48rem;
 	transform-origin: center top;
+	opacity: 0;
+}
+#page6 .page6_project{
 	animation: project 0.5s linear 0.6s 1 both; 
+	
 }
 .page6 .page6_person{
 	width: 1.33rem;
@@ -512,7 +641,11 @@ html{
 	bottom: 0;
     left: 0;
     opacity: 0;
+
+}
+#page6 .page6_person{
     animation: leftBottomPerson 2s linear 2s infinite alternate;
+	
 }
 .page6 .pc_resume{
 	width: 9rem;
@@ -528,8 +661,11 @@ html{
 	top: 1.5rem;
     margin-left: -2.58rem;
     left: 50%;
+	opacity: 0;
+}
+#page6 .pc_resume_title{
 	animation: mallTitle 1s linear 1s 1 both;
-    
+	
 }
 .page6 .pc_resume_detail{
 	width: 4.54rem;
@@ -539,22 +675,29 @@ html{
 	transform: scale(1.2);
 	left: 0;
 	right: 0;
-	top: 6.5rem;
+	top: 6.2rem;
 	margin: auto;
+	opacity: 0;
+}
+#page6 .pc_resume_detail{
 	animation: shopcart_detail 2.5s linear 2.5s 1 both;
 	
 }
-.resume_container{
+.page6 .resume_container{
 	width: 9rem;
 	height: 4.62rem;
 	z-index: 3;
-	left: -0.8rem;
+	left: 50%;
 	margin-left: -4.5rem;
 	transform: scale(0.7);
 	top: 1.6rem;
 	overflow: hidden;
 	position: absolute;
+	opacity: 0;
+}
+#page6 .resume_container{
 	animation: pc_resume 1s linear 2s 1 both;
+	
 }
 .resume_wrapper{
 	width: 100%;
@@ -590,7 +733,11 @@ html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	opacity: 0;
+}
+#page7 .page7_board{
 	animation: page2-board 0.5s linear 0s 1 both;
+	
 }
 .page7 .page7_project{
 	z-index: 2;
@@ -600,7 +747,11 @@ html{
 	left: 50%;
 	margin-left:-2.48rem;
 	transform-origin: center top;
+	opacity: 0;
+}
+#page7 .page7_project{
 	animation: project 0.5s linear 0.6s 1 both; 
+	
 }
 .page7 .page7_person{
 	width: 1.33rem;
@@ -609,23 +760,37 @@ html{
 	bottom: 0;
     left: 0;
     opacity: 0;
+
+}
+#page7 .page7_person{
     animation: leftBottomPerson 2s linear 2s infinite alternate;
+	
 }
 .page7 .pic_mobile_resume{
 	width: 2.38rem;
 	height: 4.25rem;
 	z-index: 3;
-	top: 3rem;
+	top: 2.8rem;
     left: 1rem;
-    transform: scale(1.3);
+    transform: scale(1.2);
+	opacity: 0;
+}
+#page7 .pic_mobile_resume{
+    animation: pic_mobile_resume 1.5s ease-out 1.6s 1 both;
+	
 }
 .page7 .pic_mobile_pic{
 	width: 3.88rem;
 	height: 7.75rem;
 	z-index: 3;
-	transform: scale(0.5);
-    top: 2.2rem;
+	transform: scale(0.4);
+    top: 2.1rem;
     left: 1rem;
+	opacity: 0;
+}
+#page7 .pic_mobile_pic{
+	animation: pic_mobile_pic 1.5s ease-out 1.6s 1 both;
+	
 }
 .page7 .mobile_title{
 	width: 4.91rem;
@@ -634,4 +799,171 @@ html{
 	top: 1.4rem;
 	left: 50%;
 	margin-left: -2.455rem;
+	opacity: 0;
+}
+#page7 .mobile_title{
+	animation: mallTitle 1s linear 1s 1 both;	
+	
+}
+.page7 .mobile_resume_detail{
+	width: 2.38rem;
+	height: 4.25rem;
+	z-index: 3;
+	top: 2.8rem;
+    right: 1rem;
+    transform: scale(1.2);
+	opacity: 0;
+}
+#page7 .mobile_resume_detail{
+    animation: pic_mobile_resume 1.5s ease-out 1.6s 1 both;
+	
+}
+.page7 .page7_else{
+	width: 4.9rem;
+	height: 1.98rem;
+	z-index: 3;
+	left: 0;
+    right: 0;
+    margin: auto;
+    top: 8rem;
+	opacity: 0;
+}
+#page7 .page7_else{
+    animation: page7_else 1.5s ease-out 1.6s 1 both;
+	
+}
+
+
+/*PAGE8*/
+.page8 .page8_person{
+	width: 1.33rem;
+	height: auto;
+	z-index: 3;
+	bottom: 0;
+    left: 0;
+    opacity: 0;
+
+}
+#page8 .page8_person{
+    animation: leftBottomPerson 2s linear 2s infinite alternate;
+	
+}
+.page8 .pic_tel{
+	width: 100%;
+	height: auto;
+	/*z-index: 6;*/
+	
+}
+.page8 .tel{
+	position: absolute;
+	display: block;
+	width: 1.25rem;
+	height: 1.63rem;
+	z-index: 3;
+	left: 2.1rem;
+    top: 1.6rem;
+    transform: scale(0.8);
+	opacity: 0;
+}
+#page8 .tel{
+    animation: tel 1s linear 1s 1 both;
+	
+}
+.page8 .pic_welcome{
+	width: 3.14rem;
+	height: 0.47rem;
+	z-index: 3;
+	right: 1.1rem;
+    top: 2.1rem;
+    transform-origin:center -1rem;
+	opacity: 0;
+}
+#page8 .pic_welcome{
+    animation:pic_welcome 1s ease-in-out 0s 1 both ;
+	
+}
+
+.page8 .pic_contact{
+	width: 4.9rem;
+	height: 1.03rem;
+	z-index: 3;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 6.2rem;
+	opacity: 0;
+}
+#page8 .pic_contact{
+	animation: pic_contact 1s linear 1s 1 both;
+	
+}
+.page8 .myTel{
+	width: 3.64rem;
+	height: 0.46rem;
+	z-index: 3;
+	right: 0.5rem;
+    top: 7.5rem;
+    transform: scale(1.2);
+	opacity: 0;
+}
+#page8 .myTel{
+    animation: myTel 1s ease-out 2s 1 both;
+	
+}
+.page8 .myEmail{
+	width: 4.28rem;
+	height: 0.46rem;
+	z-index: 3;
+	top: 8.3rem;
+    right: 1.5rem;
+    transform: scale(1.2);
+	opacity: 0;
+}
+#page8 .myEmail{
+    animation: myEmail 1s ease-out 2s 1 both;
+	
+}
+.page8 .pic_bullon{
+	width: 0.46rem;
+	height: 0.67rem;
+	z-index: 3;
+	top: 9.5rem;
+    right: 3.3rem;
+	opacity: 0;
+}
+#page8 .pic_bullon{
+    animation: pic_bullon 2s ease-out 2s 1 both;
+	
+}
+.page8 .pic_thank{
+	width: 2.43rem;
+	height: 0.67rem;
+	z-index: 3;
+	top: 9.5rem;
+    right: 0.5rem;
+	opacity: 0;
+}
+#page8 .pic_thank{
+    animation: pic_thank 2s linear 3s 1 both;
+	
+}
+
+/*MUSIC*/
+.music{
+	/*display: none;*/
+	position: absolute;
+	top: 0.2rem;
+	right: 0.2rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../images/play_524px_1205833_easyicon.net.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 3;
+}
+.move{
+	animation: music 3s linear 0s infinite both;
+	
+}
+.music audio{
+	display: none;
 }
