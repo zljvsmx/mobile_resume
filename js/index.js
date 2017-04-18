@@ -1,28 +1,28 @@
 $(function(){
 	//音频播放处理
 	
-	(function musicplay(){
-		var musicMenu=$("#musicMenu");
-		var musicAudio=$("#musicAudio");
-		musicMenu[0].addEventListener('click',function(){
-			if(musicAudio[0].paused){
-				musicAudio[0].play();
-				musicMenu.addClass("move");
-				return;
-			}else{
-				musicAudio[0].pause();
-				musicAudio.attr("class","music");
-			}
-		},false)
-		function controlMusic(){
-			musicAudio[0].play();
-			musicAudio[0].addEventListener('canplay',function(){
-				musicMenu.css("display","block");
-				musicMenu.addClass("move");
-			},false)
-		}
-		window.setTimeout(controlMusic,1000);
-	})();
+//	(function musicplay(){
+//		var musicMenu=$("#musicMenu");
+//		var musicAudio=$("#musicAudio");
+//		musicMenu[0].addEventListener('click',function(){
+//			if(musicAudio[0].paused){
+//				musicAudio[0].play();
+//				musicMenu.addClass("move");
+//				return;
+//			}else{
+//				musicAudio[0].pause();
+//				musicAudio.attr("class","music");
+//			}
+//		},false)
+//		function controlMusic(){
+//			musicAudio[0].play();
+//			musicAudio[0].addEventListener('canplay',function(){
+//				musicMenu.css("display","block");
+//				musicMenu.addClass("move");
+//			},false)
+//		}
+//		window.setTimeout(controlMusic,1000);
+//	})();
 	
 //	$("audio").audioPlayer();
 	
